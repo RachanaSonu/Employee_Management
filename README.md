@@ -43,7 +43,7 @@ Follow these steps to set up the Employee Management System:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/employee-management-system.git
+https://github.com/RachanaSonu/Employee_Management.git
 
 # Change into the project directory
 cd employee-management-system
