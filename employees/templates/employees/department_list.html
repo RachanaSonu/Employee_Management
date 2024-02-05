@@ -1,0 +1,13 @@
+<h1>Department List</h1>
+<ul>
+    {% for department in departments %}
+        <li><a href="{% url 'employee_list' department_id=department.id %}">{{ department.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Add Department</h2>
+<form method="post" action="{% url 'add_department' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Add Department</button>
+</form>
